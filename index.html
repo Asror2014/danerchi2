@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DANARCI — Mazali tanlov</title>
+
+    <link rel="stylesheet" href="css.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+
+<!-- =========================
+     PASSWORD
+========================= -->
+
+<div class="password-screen" id="passwordScreen">
+
+    <div class="password-box">
+
+        <div class="password-icon">
+            🔐
+        </div>
+
+        <h2>DANARCI</h2>
+
+        <p>
+            Saytga kirish uchun parolni kiriting
+        </p>
+
+        <input
+            type="password"
+            id="sitePassword"
+            placeholder="Parol"
+        >
+
+        <button id="passwordBtn">
+            Kirish →
+        </button>
+
+        <small id="passwordError">
+            Parol noto‘g‘ri
+        </small>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="#home" class="logo">
+
+            <span class="logo-icon">
+                🌯
+            </span>
+
+            <span>
+                DANAR<span>CI</span>
+            </span>
+
+        </a>
+
+
+        <nav class="menu">
+
+            <a
+                href="#home"
+                data-uz="Bosh sahifa"
+                data-ru="Главная"
+            >
+                Bosh sahifa
+            </a>
+
+            <a
+                href="#menu"
+                data-uz="Menyu"
+                data-ru="Меню"
+            >
+                Menyu
+            </a>
+
+            <a
+                href="#about"
+                data-uz="Biz haqimizda"
+                data-ru="О нас"
+            >
+                Biz haqimizda
+            </a>
+
+            <a
+                href="#contact"
+                data-uz="Aloqa"
+                data-ru="Контакты"
+            >
+                Aloqa
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button
+                class="language-btn"
+                id="languageBtn"
+            >
+                <span id="languageText">
+                    UZ
+                </span>
+
+                ▾
+            </button>
+
+
+            <button
+                class="cart-btn"
+                id="cartOpen"
+            >
+                🛒
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <div class="container hero-content">
+
+
+        <div class="hero-text">
+
+            <div class="small-label">
+                🔥 HAR KUNI YANGI TA'M
+            </div>
+
+
+            <h1>
+
+                Mazali taomlar.
+
+                <span>
+                    Unutilmas ta'm.
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Yangi tayyorlangan doner,
+                lavash, burger va boshqa
+                mazali taomlarni DANARCI'dan
+                buyurtma qiling.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#menu"
+                    class="primary-btn"
+                >
+                    Menyuni ko‘rish →
+                </a>
+
+
+                <button
+                    class="secondary-btn"
+                    id="heroOrder"
+                >
+                    🛍 Buyurtma berish
+                </button>
+
+            </div>
+
+
+            <div class="hero-info">
+
+                <div>
+
+                    <strong>
+                        15+
+                    </strong>
+
+                    <span>
+                        Taom turi
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        4.9 ⭐
+                    </strong>
+
+                    <span>
+                        Mijozlar bahosi
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        25 min
+                    </strong>
+
+                    <span>
+                        Tayyorlash
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="hero-circle"></div>
+
+            <div class="hero-food">
+                🌯
+            </div>
+
+
+            <div class="food-card">
+
+                <div class="food-emoji">
+                    🌯
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Max Doner
+                    </h3>
+
+                    <p>
+                        Yangi va issiq
+                    </p>
+
+                </div>
+
+
+                <strong>
+                    35 000 so‘m
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CATEGORIES
+========================= -->
+
+<section class="categories">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div>
+
+                <span>
+                    MENYU
+                </span>
+
+                <h2>
+                    Nimani xohlaysiz?
+                </h2>
+
+            </div>
+
+
+            <p>
+                O‘zingizga yoqqan taomni tanlang
+            </p>
+
+        </div>
+
+
+        <div class="category-list">
+
+
+            <button
+                class="category active"
+                data-category="all"
+            >
+
+                <span>
+                    🍽️
+                </span>
+
+                <b>
+                    Barchasi
+                </b>
+
+            </button>
+
+
+            <button
+                class="category"
+                data-category="doner"
+            >
+
+                <span>
+                    🌯
+                </span>
+
+                <b>
+                    Doner
+                </b>
+
+            </button>
+
+
+            <button
+                class="category"
+                data-category="lavash"
+            >
+
+                <span>
+                    🥙
+                </span>
+
+                <b>
+                    Lavash
+                </b>
+
+            </button>
+
+
+            <button
+                class="category"
+                data-category="burger"
+            >
+
+                <span>
+                    🍔
+                </span>
+
+                <b>
+                    Burger
+                </b>
+
+            </button>
+
+
+            <button
+                class="category"
+                data-category="potato"
+            >
+
+                <span>
+                    🍟
+                </span>
+
+                <b>
+                    Kartoshka
+                </b>
+
+            </button>
+
+
+            <button
+                class="category"
+                data-category="drink"
+            >
+
+                <span>
+                    🥤
+                </span>
+
+                <b>
+                    Ichimlik
+                </b>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MENU
+========================= -->
+
+<section
+    class="menu-section"
+    id="menu"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div>
+
+                <span>
+                    ENG MAZALI
+                </span>
+
+                <h2>
+                    Bizning menyu
+                </h2>
+
+            </div>
+
+
+            <div class="search-box">
+
+                🔎
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Taom qidirish..."
+                >
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="products"
+            id="products"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section
+    class="about"
+    id="about"
+>
+
+    <div class="container about-grid">
+
+
+        <div class="about-image">
+
+            <div class="about-big-icon">
+                🌯
+            </div>
+
+        </div>
+
+
+        <div class="about-text">
+
+            <span>
+                BIZ HAQIMIZDA
+            </span>
+
+
+            <h2>
+                DANARCI —
+                ta'mni boshqacha
+                his qiling.
+            </h2>
+
+
+            <p>
+
+                Biz har bir buyurtmani
+                yangi mahsulotlardan
+                tayyorlashga va
+                mijozlarimizga mazali
+                hamda sifatli taom
+                yetkazishga harakat qilamiz.
+
+            </p>
+
+
+            <div class="about-items">
+
+                <div>
+                    <b>✓</b>
+                    <span>
+                        Yangi mahsulotlar
+                    </span>
+                </div>
+
+
+                <div>
+                    <b>✓</b>
+                    <span>
+                        Tez tayyorlash
+                    </span>
+                </div>
+
+
+                <div>
+                    <b>✓</b>
+                    <span>
+                        Sifatli xizmat
+                    </span>
+                </div>
+
+
+                <div>
+                    <b>✓</b>
+                    <span>
+                        Qulay narxlar
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+    class="contact"
+    id="contact"
+>
+
+    <div class="container">
+
+        <div class="contact-card">
+
+            <div>
+
+                <span>
+                    ALOQA
+                </span>
+
+                <h2>
+                    Buyurtmangizni
+                    hoziroq bering!
+                </h2>
+
+                <p>
+                    Biz bilan bog‘laning
+                    yoki to‘g‘ridan-to‘g‘ri
+                    sayt orqali buyurtma bering.
+                </p>
+
+            </div>
+
+
+            <a
+                href="tel:+998900000000"
+                class="phone-btn"
+            >
+                📞 +998 90 000 00 00
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div class="footer-logo">
+
+            🌯
+
+            <strong>
+                DANARCI
+            </strong>
+
+            <p>
+                Mazali tanlov.
+            </p>
+
+        </div>
+
+
+        <div class="socials">
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Telegram
+            </a>
+
+            <a href="#">
+                YouTube
+            </a>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 DANARCI.
+            Barcha huquqlar himoyalangan.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     OVERLAY
+========================= -->
+
+<div
+    class="overlay"
+    id="overlay"
+></div>
+
+
+<!-- =========================
+     CART
+========================= -->
+
+<aside
+    class="cart-panel"
+    id="cartPanel"
+>
+
+    <div class="cart-header">
+
+        <div>
+
+            <span>
+                SAVATCHA
+            </span>
+
+            <h2>
+                Sizning buyurtmangiz
+            </h2>
+
+        </div>
+
+
+        <button id="cartClose">
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cartItems"
+    >
+
+        <div class="empty-cart">
+
+            🛒
+
+            <h3>
+                Savatcha bo‘sh
+            </h3>
+
+            <p>
+                Yoqtirgan taomingizni tanlang.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="cart-bottom">
+
+        <div class="total">
+
+            <span>
+                Jami:
+            </span>
+
+            <strong id="cartTotal">
+                0 so‘m
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-btn"
+            id="checkoutBtn"
+        >
+            Buyurtma berish →
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- =========================
+     ORDER MODAL
+========================= -->
+
+<div
+    class="modal"
+    id="orderModal"
+>
+
+    <div class="modal-box">
+
+
+        <button
+            class="modal-close"
+            id="orderClose"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-icon">
+            💳
+        </div>
+
+
+        <h2>
+            Buyurtma berish
+        </h2>
+
+
+        <p>
+            Ma'lumotlaringizni kiriting.
+        </p>
+
+
+        <form id="orderForm">
+
+
+            <label>
+
+                Ism
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Ismingiz"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+
+                Familiya
+
+                <input
+                    type="text"
+                    id="customerSurname"
+                    placeholder="Familiyangiz"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+
+                Karta raqami
+
+                <input
+                    type="text"
+                    id="cardNumber"
+                    placeholder="0000 0000 0000 0000"
+                    maxlength="19"
+                    inputmode="numeric"
+                    required
+                >
+
+            </label>
+
+
+            <button
+                type="submit"
+                class="submit-btn"
+            >
+                💳 Buyurtmani tasdiqlash
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     RECEIPT
+========================= -->
+
+<div
+    class="modal"
+    id="receiptModal"
+>
+
+    <div class="receipt">
+
+
+        <div class="receipt-head">
+
+            <div class="receipt-logo">
+                🌯
+            </div>
+
+            <h2>
+                DANARCI
+            </h2>
+
+            <p>
+                Buyurtma cheki
+            </p>
+
+        </div>
+
+
+        <div class="receipt-line"></div>
+
+
+        <div
+            id="receiptItems"
+        ></div>
+
+
+        <div class="receipt-line"></div>
+
+
+        <div class="receipt-total">
+
+            <span>
+                JAMI
+            </span>
+
+            <strong id="receiptTotal">
+                0 so‘m
+            </strong>
+
+        </div>
+
+
+        <div class="receipt-info">
+
+            <p>
+                <b>Ism:</b>
+
+                <span id="receiptName"></span>
+            </p>
+
+
+            <p>
+                <b>Familiya:</b>
+
+                <span id="receiptSurname"></span>
+            </p>
+
+
+            <p>
+                <b>Karta:</b>
+
+                <span id="receiptCard"></span>
+            </p>
+
+        </div>
+
+
+        <p class="thanks">
+            Xaridingiz uchun rahmat! ❤️
+        </p>
+
+
+        <button
+            class="print-btn"
+            onclick="window.print()"
+        >
+            🖨 Chekni chiqarish
+        </button>
+
+
+        <button
+            class="done-btn"
+            id="receiptClose"
+        >
+            Tayyor
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="js.js"></script>
+
+</body>
+</html>
